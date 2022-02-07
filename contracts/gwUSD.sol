@@ -1,0 +1,12 @@
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract GWUSD is ERC20 {
+
+    constructor(uint256 initialSupply) ERC20("gwUSD Mock", "gwUSDT") {
+        _mint(msg.sender, initialSupply);
+    }
+
+}
+
